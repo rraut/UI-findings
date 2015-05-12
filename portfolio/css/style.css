@@ -1,0 +1,125 @@
+/* Reset Styles */
+*{
+	margin: 0;
+	padding: 0;
+}
+html {height:100%}
+body {
+	min-height:101%;
+	color:black;
+	font-family: verdana;
+	font-size: 16px;
+}
+ol,ul {list-style:none}
+a{
+	color: #333;
+	text-decoration: none;
+}
+.block{
+	display: block;
+}
+#wrap {
+	width:100%;
+	margin:0 auto;
+	padding:0px 0;
+	overflow:hidden
+}
+.box {
+	min-height:500px;
+	margin:0;
+	border:1px solid green;
+	padding: 120px 0 10px 0;
+	overflow: hidden;
+} 
+.scrollerNav {
+	position:fixed;
+	top:0;
+	width:100%;
+	overflow: hidden;
+	min-height: 41px;
+	background: rgba(215,214,210,0.9);
+
+}
+.scrollerNav ul {
+	position: fixed;
+	right: 0;
+	width: 400px;
+	overflow: hidden;
+}
+.scrollerNav li {
+	display:block;
+	float:left;	
+	margin-left: 1%;
+}
+.scrollerNav li a
+{
+display: block;
+padding: 2%;
+color: #333;
+padding: 10px 20px;
+font-size: 100%;
+}
+.scrollerNav li.active {border-bottom: 1px solid #000;} 
+.wrap{
+	margin:50px 0 0 0;
+}
+.container{
+	width: 100%;
+}
+.home{
+	background: url("../images/hero2.jpg");
+}
+.home-heading{
+	font-size: 418%;
+	margin: 20px auto;
+	display: block;
+}
+.text-container{
+	width: 70%;
+	margin: 0 auto;
+}
+.name{
+	margin: 0 0 10px 0;
+	font-size: 150%;
+}
+.section-title{
+	font-size: 300%;
+	display: block;
+	text-align: center;
+}
+.home-description{
+	font-size: 120%;
+}
+.home-description{
+	margin: 30px 0 0 0;
+}
+.toggle{
+	float: right;
+	width: 30px;
+	height: 30px;
+	display: none;
+	margin: 5px 20px 5px 0;
+}
+.togglespan{
+	background: #333;
+	height: 5px;
+	width: 90%;
+	display: block;
+	margin: 4px auto 0 auto;
+	border-radius: 15px;
+} 
+.projectholder {
+	margin: 40px 20px;
+	overflow: hidden;
+}
+.projectholderimg{
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+	display: block;
+}
+.projectDescription{
+	width: 100%;
+	margin: 30px auto;
+	display: none;
+}

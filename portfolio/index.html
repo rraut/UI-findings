@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <title></title>
+          <!-- Meta tags -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />  <!-- w3c recomends this meta tag  -->
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />  <!-- w3c recomends this meta tag  -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="copyright" content="" />
+  <meta name="author" content="" />
+  <meta name="rating" content="general" />
+  <meta name="robots" content="all" />
+        <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css" type="text/css"/>
+  <link rel="stylesheet" href="css/media.css" type="text/css"/>
+      <!-- Javascripts -->
+    <script language="javascript" type="text/javascript" src="js/jquery.js"></script>
+    <script language="javascript" type="text/javascript" src="js/jquery-ui.js"></script>
+    <script language="javascript" type="text/javascript" src="js/page-scroller2.1.js"></script>
+    <script language="javascript" type="text/javascript">
+        $(document).ready(function(){
+        $("#wrap").pageScroller({        
+          sectionClass: 'main-container'
+        });       
+      
+        $(".toggle-item").click(function() {
+         // $( ".nav-menu" ).toggle();
+          var clientWidth = $(window).width();
+          if (clientWidth<768) {
+            $( ".nav-menu" ).slideToggle("slow");  
+          };
+           
+        });
+        
+        $(".projectholderimg").click(function() {
+          $(this).next().toggle();
+                  
+        });
+       
+      });
+    </script>
+
+</head>
+
+<body>
+<div class="container">
+      <div id="wrap" class="wrap">
+           <div class="box home"  title="box1" id="box1">
+              <div class="text-container">
+                <span class="name block">RENUKA RAUT</span>
+                <span class="home-heading">I Like making great idea happens.</span>
+                <span class="home-description block">I contrive beautiful responsive websites. I like to make website avalible for all users. It does'nt matter whether they are using laptop, mobile, tablet or high resolution monitor. I belive in sincerity. I am always keen to fulfill client's requirement and make them happy.</span>
+              </div> 
+           </div>
+           <div class="box"  title="box2" id="box2">
+             <div class="text-container">
+                <span class="section-title">Work</span>
+                <div class="projects">
+                      <div class="projectholder">
+                        <img class="projectholderimg" src="images/pmresponsive.png">
+                        <div class="projectDescription">
+                         Priority Moments Responsive is a web Application for o2 Customers. It show’s different types of merchant offers  like instore and online from different categories.  And allow them to accept, save ,search, delete saved  and rate offers. This is a responsive Project which is supporting different types of Android Devices ,  iphones , ipad and desktop.
+                       </div>
+                      </div>
+                      <div class="projectholder">
+                        <img class="projectholderimg" src="images/giftbackresponsive2.png">
+                          <div class="projectDescription">
+                            It is site of Giftbak . Giftbak is mobile app and site has detail information about it. It is responsive site. 
+                          </div>
+                      </div>
+                      <div class="projectholder">
+                        <img  class="projectholderimg" src="images/iknowprops.png">
+                         <div class="projectDescription">
+                          O2 Biz Product is app which gives information about o2 product.This is build using Jquery Mobile. WE have overridden JQuery CSS to Achieve Our Designs. Basically it is web app. We are Supporting Windows Phone, iphone and Android and Desktop browser.
+                         </div>
+                      </div>
+                     
+                </div>
+
+             </div>
+          </div>
+
+
+           <div class="box"  title="box3" id="box3"><a><span>
+            Contact</span></a></div>
+          
+      </div>  <!-- end of wrap div -->
+</div>    
+      <nav class="scrollerNav">
+        <div class="toggle toggle-item">
+              <span class="togglespan"></span>
+              <span class="togglespan"></span>
+              <span class="togglespan"></span>
+        </div>
+        <ul class="nav-menu">
+          <li class="toggle-item"><a href="#box1">Home</a></li>
+          <li class="toggle-item"><a href="#box2">Work</a></li>
+          <li class="toggle-item"><a href="#box3">Contact</a></li>
+        </ul>
+      </nav>
+      
+</body>
+</html>

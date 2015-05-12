@@ -1,0 +1,67 @@
+@media screen and (max-width: 767px){
+	body{
+		font-size: 14px;
+	}
+	.home-heading{
+		width: 100%;
+		font-size: 200%;
+	}
+	.toggle{
+		display: block;
+	}
+	.scrollerNav .nav-menu{
+		display: none;
+		position: static;
+		width: 100%;
+		clear: both;
+		background: rgba(0, 0, 0, 0.8);
+	 }
+	.scrollerNav li{
+		width: 100%;
+		text-align: center;
+	}
+	.scrollerNav li,.scrollerNav li.active {
+		border-bottom: none;
+	} 
+	.scrollerNav li.active {
+		text-decoration: underline;
+	} 
+	.scrollerNav li a{
+		padding: 15px 20px;
+		border-bottom: 1px solid #000;
+		color: #CCC;
+	}
+	.text-container{
+		width: 90%;
+	}
+	.box{
+		padding: 60px 0 0px 0;
+		min-height: 300px;
+	}
+	.projectDescription,.projectholderimg{
+		width: 100%;
+		margin-top: 20px;
+	}
+}
+@media screen and (min-width: 1023px){
+		.scrollerNav .nav-menu{
+			display: block!important;
+		}
+		
+}
+@media screen and (min-width: 768px){
+		.scrollerNav .nav-menu{
+			display: block!important;
+		}
+}
+@media screen and (max-width: 1023px){
+		.text-container {
+			width: 90%;
+		}	
+}
+@media screen and (max-width: 318px){
+	body{
+		width: 320px;
+		overflow-x: scroll;
+	}
+}
